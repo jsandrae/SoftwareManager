@@ -31,11 +31,10 @@ namespace SoftwareManager.Server
             {
                 options.AddDefaultPolicy(builder =>
                 {
-                    builder.SetIsOriginAllowedToAllowWildcardSubdomains()
-                        .WithOrigins("http://localhost:5001", "http://localhost:5000")
+                    builder
+                        .AllowAnyOrigin()
                         .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials();
+                        .AllowAnyMethod();
                 });
             });
 

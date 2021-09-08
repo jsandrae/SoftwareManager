@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\appsettings.json" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Dockerfile" />
     <None Remove="nginx.conf" />
   </ItemGroup>
